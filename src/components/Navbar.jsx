@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 py-2">
           <div className="flex justify-between items-center">
             <a href="#home" className="text-white font-bold">
-              <img src="/Logo.jpg" alt="Logo" className="w-16 h-16" />
+              <img src="/Logo1.png" alt="Logo" className="w-16 h-16" />
             </a>
             
             {/* Desktop Menu */}
