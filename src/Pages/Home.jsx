@@ -4,13 +4,13 @@ const Home = () => {
   return (
     
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
+          <div className="space-y-6">
             <div className="space-y-2">
               <div className="flex gap-3 justify-center md:justify-start text-blue-600 font-medium text-xl">
                 <span>Hello, I'm</span>
               </div>
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight text-center md:text-start">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight text-center md:text-start">
                 Nainu
                 <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Fathima
@@ -22,10 +22,10 @@ const Home = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 flex justify-center items-center gap-2">
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 flex justify-center items-center gap-2">
                 View My Works <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex justify-center items-center gap-2">
+              <button className="border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-6 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex justify-center items-center gap-2">
                 <Download className="w-5 h-5" /> Download CV
               </button>
             </div>
