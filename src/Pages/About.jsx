@@ -10,53 +10,6 @@ const About = () => {
     setIsVisible(true);
   }, []);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100
-      }
-    }
-  };
-
-  const SkillBar = ({ skill, index }) => (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: index * 0.1 }}
-      className="mb-4"
-    >
-      <div className="flex justify-between items-center mb-2">
-        <span className="text-sm font-medium text-gray-700">{skill.name}</span>
-        <span className="text-sm text-gray-500">{skill.level}%</span>
-      </div>
-      <div className="w-full bg-gray-200 rounded-full h-2">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: `${skill.level}%` }}
-          transition={{ delay: index * 0.1 + 0.5, duration: 1 }}
-          className={`h-2 rounded-full bg-gradient-to-r ${skill.color}`}
-        />
-      </div>
-    </motion.div>
-  );
-
-
-
   return (
     <section id="about" className="min-h-screen bg-white py-16 px-4 relative overflow-hidden mt-10">
       {/* Background Decorations */}
@@ -74,7 +27,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             About{' '}
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-purple-600 text-transparent bg-clip-text">
               Me
