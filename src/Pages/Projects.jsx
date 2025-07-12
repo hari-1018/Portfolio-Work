@@ -199,7 +199,7 @@ const Projects = () => {
               Check out my GitHub for additional projects and contributions
             </p>
             <a
-              href="https://github.com/hari-1018"
+              href="https://github.com/NainuFathima"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium"
