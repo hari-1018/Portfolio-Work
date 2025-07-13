@@ -58,9 +58,9 @@ const Navbar = () => {
                   {item}
                 </a>
               ))}
-              <button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
+              <a href="#contact" className="w-full mt-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
                 Hire Me
-              </button>
+              </a>
             </div>
           </div>
         </div>
