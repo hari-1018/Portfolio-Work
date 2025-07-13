@@ -11,14 +11,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="min-h-screen bg-white py-16 px-4 relative overflow-hidden mt-10">
-      {/* Background Decorations */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full blur-3xl opacity-70"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-pink-100 to-orange-100 rounded-full blur-3xl opacity-70"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-full blur-3xl opacity-50"></div>
-      </div>
-
+    <section id="about" className="min-h-screen bg-white py-20 px-4 relative overflow-hidden mt-10">
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
         <motion.div
@@ -72,7 +65,7 @@ const About = () => {
               <div className="space-y-2 mb-6">
                 <div className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors">
                   <FaEnvelope className="mr-3 text-indigo-500" />
-                  <span className="text-md">nainufathima@gmail.com</span>
+                  <span className="text-md">nainufathima1@gmail.com</span>
                 </div>
                 <div className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors">
                   <FaPhone className="mr-3 text-indigo-500" />
@@ -169,10 +162,10 @@ const About = () => {
                           <FaLaptopCode className="text-white text-sm" />
                         </div>
                         <h4 className="text-lg font-semibold text-gray-800">Data Analyst Intern</h4>
-                        <p className="text-indigo-600 font-medium mb-2">Excelr • Aug 2024 - Present</p>
+                        <p className="text-indigo-600 font-medium mb-2">Excelr • Aug 2024 - April 2025</p>
                         <ul className="text-gray-600 list-disc list-outside">
                           <li>Gained hands on experience in Microsoft Excel, MySQL, Microsoft Power BI, and Tableau to vizualize data effectively.</li>
-                          <li>Enhancing programming skills in Python and R, applying statistical concepts for data-driven decision making.</li>
+                          <li>Enhanced programming skills in Python and R, applying statistical concepts for data-driven decision making.</li>
                           <li>Worked on real-world datasets to develop actionable insights and created interactive dashboards.</li>
                           <li>Strengthened expertise in data manipulation, visualization, and business intelligence tools.</li>
                           

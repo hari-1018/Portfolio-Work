@@ -1,4 +1,5 @@
-import { ArrowRight, Download, Star } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
+import { FaWhatsapp, FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -28,6 +29,22 @@ const Home = () => {
               <button className="border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-6 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex justify-center items-center gap-2">
                 <Download className="w-5 h-5" /> Download CV
               </button>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex justify-center md:justify-start gap-4">
+              <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center text-white hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110">
+                <FaLinkedinIn className="w-6 h-6" />
+              </a>
+              <a href="https://github.com/NainuFathima" className="w-12 h-12 rounded-full bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center text-white hover:shadow-lg hover:shadow-gray-500/25 transition-all duration-300 transform hover:scale-110">
+                <FaGithub className="w-6 h-6" />
+              </a>
+              <a href="https://wa.me/8111958611" className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center text-white hover:shadow-lg hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-110">
+                <FaWhatsapp className="w-6 h-6" />
+              </a>
+              <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center text-white hover:shadow-lg hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-110">
+                <FaEnvelope className="w-6 h-6" />
+              </a>
             </div>
           </div>
           

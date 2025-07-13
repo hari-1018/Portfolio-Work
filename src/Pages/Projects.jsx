@@ -71,20 +71,19 @@ const Projects = () => {
   return (
     <div id="projects" className="min-h-screen bg-white text-gray-900 px-4 py-20 md:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
-            </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
+          </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Projects highlighting insights, visual analytics, and data-informed decisions
           </p>
-            <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: "6rem" }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mt-8 rounded-full"
-            /> 
+          <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "6rem" }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mt-8 rounded-full"
+          /> 
         </div>
 
         {/* Projects */}
@@ -169,7 +168,7 @@ const Projects = () => {
                       className="flex items-center gap-3 px-6 py-4 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-all duration-300 group/btn font-medium"
                     >
                       <FaGithub size={18} />
-                      <span>View Code</span>
+                      <span>View</span>
                       <FaArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform duration-300" />
                     </a>
                     
@@ -179,7 +178,7 @@ const Projects = () => {
                         className="flex items-center gap-3 px-6 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 group/btn font-medium"
                       >
                         <FaEye size={18} />
-                        <span>View Details</span>
+                        <span>View More</span>
                       </button>
                     )}
                   </div>
@@ -251,9 +250,8 @@ const Projects = () => {
                 </button>
               </div>
 
-              {/* Modal Content */}
+              {/* Details Modal */}
               <div className="p-6">
-                {/* Image Gallery */}
                 {selectedProject.additionalImages && (
                   <div className="mb-8">
                     <div className="relative">
@@ -262,8 +260,7 @@ const Projects = () => {
                         alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
                         className="w-full h-80 object-contain rounded-2xl"
                       />
-                      
-                      {/* Navigation buttons */}
+
                       {selectedProject.additionalImages.length > 1 && (
                         <>
                           <button
@@ -282,7 +279,6 @@ const Projects = () => {
                       )}
                     </div>
 
-                    {/* Image indicators */}
                     {selectedProject.additionalImages.length > 1 && (
                       <div className="flex justify-center mt-4 space-x-2">
                         {selectedProject.additionalImages.map((_, index) => (
@@ -307,7 +303,6 @@ const Projects = () => {
                   </p>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-4 mt-8 pt-6 border-t border-gray-200">
                   <a
                     href={selectedProject.githubLink}
