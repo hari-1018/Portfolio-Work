@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import {
-  IoLogoGithub, IoLogoLinkedin, IoLogoInstagram, IoLogoWhatsapp,
+  IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp,
   IoIosSend, IoMdMail, IoIosPhonePortrait
 } from "react-icons/io";
 
@@ -27,10 +27,10 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_0i3r2ic',
-      'template_74zwish',
+      'service_nczzi5v',
+      'template_psqfuc2',
       formRef.current,
-      'Lspt525qWf7YsKNM9'
+      'bmdJ8ed4yAmHuL8NW'
     ).then(
       (result) => {
         console.log('Email sent:', result.text);

@@ -165,7 +165,7 @@ const Projects = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-6 py-4 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-all duration-300 group/btn font-medium"
+                      className="flex items-center gap-3 px-3 py-3 md:px-6 md:py-4 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-all duration-300 group/btn font-medium"
                     >
                       <FaGithub size={18} />
                       <span>View</span>
@@ -175,7 +175,7 @@ const Projects = () => {
                     {project.hasMoreContent && (
                       <button
                         onClick={() => openModal(project)}
-                        className="flex items-center gap-3 px-6 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 group/btn font-medium"
+                        className="flex items-center gap-3 px-3 py-3 md:px-6 md:py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 group/btn font-medium"
                       >
                         <FaEye size={18} />
                         <span>View More</span>

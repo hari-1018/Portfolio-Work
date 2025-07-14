@@ -74,14 +74,16 @@ const About = () => {
               </div>
 
               {/* Download Resume */}
-              <motion.button
+              <motion.a
+                href='/NainuFathima.pdf'
+                download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 px-6 rounded-2xl font-semibold shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <FaDownload />
                 <span>Download Resume</span>
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 
@@ -141,7 +143,7 @@ const About = () => {
               )}
 
               
-{activeTab === 'experience' && (
+              {activeTab === 'experience' && (
                 <motion.div
                   key="experience"
                   initial={{ opacity: 0, y: 20 }}
@@ -226,13 +228,14 @@ const About = () => {
           <p className="text-lg md:text-xl mb-6 opacity-90">
             Need clear insights from complex data? I’m passionate about helping businesses make smarter decisions through data analytics.
           </p>
-          <motion.button
+          <motion.a
+            href='#contact'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Get In Touch
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>
